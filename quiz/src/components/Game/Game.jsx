@@ -1,27 +1,28 @@
 import React, { useEffect, useState } from 'react';
 import questions from '../questions/questions';
 
-function Game({ step, setStep, liftingPoints }) {
+function Game({ setStatistic, statistic }) {
 
 
-    const [points, setPoints] = useState([]);
-    const question = questions[step];
 
-    const percentage = Math.round((step / questions.length) * 100);
+    const question = questions[statistic.step];
 
-    const onClickVariant = (answerIndex) => {
+    const percentage = Math.round((statistic.step / questions.length) * 100);
 
-        setStep(step + 1)
+    const onClickVariant = (index) => {
 
-        answerIndex === question.correct && setPoints((prev) => [...prev, answerIndex]);
-        liftingPoints(points)
+        setStatistic(prevState => ({
+
+            step: (prevState.step + 1),
 
 
-    };
-    useEffect(() => {
-        liftingPoints(points)
 
-    }, [points])
+            points: index === questions[prevState.step].correct ? (prevState.points + 1) : prevState.points
+
+        }))
+
+    }
+
 
 
 

@@ -6,34 +6,27 @@ import questions from './components/questions/questions';
 
 
 
-
-
-
-
 function App() {
 
-  const [step, setStep] = useState(0);
-  const [points, setPoints] = useState();
 
-
-
-
+  const [statistic, setStatistic] = useState({ step: 0, points: 0 })
 
 
   return (
     <div className="App">
 
-      {step !== questions.length ?
+      {statistic.step !== questions.length ?
         <Game
-          step={step}
-          setStep={setStep}
-          liftingPoints={setPoints}
+
+
+          statistic={statistic}
+          setStatistic={setStatistic}
 
 
         ></Game>
         :
         <Result
-          points={points}
+          points={statistic.points}
           questions={questions}
         />
       }
