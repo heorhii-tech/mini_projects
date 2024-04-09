@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import questions from '../questions/questions';
 
 function Game({ setStatistic, statistic }) {
+    console.log('in game');
 
 
 

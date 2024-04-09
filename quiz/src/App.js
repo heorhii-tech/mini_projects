@@ -7,6 +7,7 @@ import questions from './components/questions/questions';
 
 
 function App() {
+  console.log('in app');
 
 
   const [statistic, setStatistic] = useState({ step: 0, points: 0 })
