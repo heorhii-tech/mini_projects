@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+header{
+  @apply bg-slate-500 bg-opacity-10 h-14 flex items-center;
+  .nav_wrapper{
+    & a{
+      @apply transition duration-300 border-0  text-lg ml-6 font-mono font-bold leading-8 tracking-wide ;
+      &:hover{
+        @apply border-b-4 border-indigo-700;
+      }
+    }
+    .active{
+      @apply  text-slate-400;
+      
+    }
+  }
+}
+
+
+
+  .main_wrapper {
+    @apply  flex flex-col items-center ;
+    & button{
+      @apply w-32 mt-6 duration-300 leading-10 rounded-lg px-8 py-0 font-bold bg-sky-500/75 font-mono border-sky-500/75;
+    &:hover {
+        @apply bg-red-800 text-white;
+      }
+    }
+  }
+
+  .cards_wrapper {
+    @apply container max-w-4xl  m-auto flex justify-between mt-14 gap-5 p-5;
+
+    & div {
+     @apply w-1/2;
+      & h3{
+        @apply font-mono leading-8 font-bold text-2xl;
+      }
+
+      & form {
+
+        @apply  shadow-md p-6 flex flex-col justify-center items-center border-2 border-zinc-500 border-solid rounded-lg gap-6;
+
+        & label {
+          @apply font-medium font-mono text-xl font-bold;
+        }
+
+        & input {
+          @apply font-mono text-lg transition duration-500 ease-in-out border-2 border-zinc-500 border-solid rounded-lg w-9/12 h-8 cursor-pointer;
+
+          &:hover {
+            @apply border-cyan-700;
+
+          }
+
+          &:focus {
+            @apply border-cyan-700 border-2 outline-none;
+          }
+        }
+
+        
+        & button{
+          @apply duration-300 leading-8 rounded-lg px-8 py-0 font-bold bg-sky-500/75 font-mono  border-sky-500/75;
+          &:hover{
+            @apply bg-sky-600/75 text-black;
+          }
+        }
+      }
+    }
+  }
+  .playerInfo_form{
+    @apply font-mono leading-8 font-bold shadow-md p-6 flex flex-col justify-center items-center border-2 border-zinc-500 border-solid rounded-lg gap-6 ;
+    & h4{
+      @apply font-mono text-lg
+    }
+    & img{
+      @apply w-64
+    }
+  }
+
+
+}

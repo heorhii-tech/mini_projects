@@ -64,64 +64,15 @@ a {
     margin: 20px auto
 }
 
-.nav_wrapper {
-    width: 100%;
-    margin: auto;
 
-    ul {
-        display: flex;
-        gap: 20px;
-        list-style-type: none;
-
-
-
-
-
-    }
-
-    a {
-
-        text-decoration: none;
-        font-family: 'Courier New', Courier, monospace;
-        font-size: large;
-        font-weight: 700;
-        color: black;
-
-        &:visited {
-            text-decoration: none;
-
-        }
-
-
-    }
-
-    .active {
-        color: rgb(110, 110, 241);
-        text-decoration: underline;
-        font-size: 18px;
-
-    }
-
-
-}
 
 .nav_button {
     margin-top: 20px;
 }
 
-.cards_wrapper {
-    display: flex;
-    width: 50%;
-    margin: auto;
-    gap: 40px;
-    justify-content: center;
-
-    div {
-        width: 40%;
-    }
 
 
-    form {
+    /*form {
         display: flex;
         flex-direction: column;
         gap: 10px;
@@ -157,18 +108,8 @@ a {
         }
     }
 
-}
-
-.main_wrapper {
-    display: flex;
-    flex-direction: column;
-
-    button {
-        width: 100px;
-        margin: 20px auto;
-        height: 25px;
-        cursor: pointer;
+} */
 
 
-    }
-}
+
+

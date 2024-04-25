@@ -1,9 +1,12 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [],
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx}"],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        'maket-blue':'#0E1E30'
+      }
+    },
   },
   plugins: [],
 }
-

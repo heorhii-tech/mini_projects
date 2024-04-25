@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components {
+  .main_wrapper {
+    @apply container max-w-screen-lg mx-auto;
+  }
+  .cards_wrapper {
+    @apply container m-auto flex justify-between;
+  }
+  .cards_wrapper div form {
+    @apply p-3 flex flex-col justify-center items-center border-2 border-zinc-500 border-solid rounded-lg gap-6;
+  }
+  .cards_wrapper div form label {
+    @apply font-medium font-mono text-lg;
+  }
+  .cards_wrapper div form input {
+    @apply border-2 border-zinc-500 border-solid rounded-lg w-20 h-7;
+  }
+  .cards_wrapper div form img {
+    @apply w-60;
+  }
+}/*# sourceMappingURL=index.css.map */
